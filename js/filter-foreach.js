@@ -22,7 +22,7 @@ $(function() {
   // FILTERING CODE GOES HERE - CREATES A NEW ARRAY CALLED results
   var results = [];
   people.forEach(function(person) {
-    if (person.rate >= 65 && person.rate <=90) {
+    if (person.rate >= 65 && person.rate <=130) {
       results.push(person);
     }
   });
@@ -31,7 +31,7 @@ $(function() {
   var $tableBody = $('<tbody></tbody>');
   for (var i = 0; i < results.length; i++) {
     var person = results[i];
-    var $row = $('<tr</tr>');
+    var $row = $('<tr></tr>');
     $row.append($('<td></td>').text(person.name));
     $row.append($('<td></td>').text(person.rate));
     $tableBody.append($row);

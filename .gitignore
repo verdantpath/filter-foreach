@@ -1,6 +1,6 @@
 # UNTRACKED FOLDERS
 /img
+/css
 
 # UNTRACKED FILES
-css/base.css
-js/jquery-1.11.0.min.js
+js/jquery.js
