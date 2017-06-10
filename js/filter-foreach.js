@@ -1,7 +1,31 @@
 $(function() {
   // DATA ABOUT PEOPLE GOES HERE
+  var people = [
+    {
+      name: 'Casey',
+      rate: 60
+    },
+    {
+      name: 'Camille',
+      rate: 80
+    },
+    {
+      name: 'Gordon',
+      rate: 75
+    },
+    {
+      name: 'Nigel',
+      rate: 120
+    }
+  ];
 
-  // FILTERING CODE GORS HERE - CREATES A NEW ARRAY CALLED results
+  // FILTERING CODE GOES HERE - CREATES A NEW ARRAY CALLED results
+  var results = [];
+  people.forEach(function(person) {
+    if (person.rate >= 65 && person.rate <=90) {
+      results.push(person);
+    }
+  });
 
   // LOOP THROUGH NEW ARRAY AND ADD MATCHING PEOPLE TO THE RESULTS TABLE
   var $tableBody = $('<tbody></tbody>');
